@@ -17,7 +17,7 @@ global class EmailContact implements Messaging.InboundEmailHandler {
     }                                                                                                                   
         
       insert con;
-                                                             
+        //test                                                     
    	 return result;                                                                                                                                                                                                                                                                                         
     
   }

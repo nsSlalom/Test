@@ -1,0 +1,16 @@
+<apex:page sidebar="false" tabStyle="account" >
+    
+    <style>
+        #ok {font: arial; font-size:16px; color: blue;}
+    </style>
+    <div id="ok">
+     	<h1>
+            <a href="https://na34.salesforce.com/001/o">Account<br></br>           
+         Home</a>
+    	</h1>  
+    </div>
+    
+    <apex:enhancedList type="Account" height="500"
+                       rowsPerPage="25" id="AccountList" customizable="true"/>
+   	
+</apex:page>

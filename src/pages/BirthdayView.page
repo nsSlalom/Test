@@ -1,0 +1,20 @@
+<apex:page controller="ContactBirthdayController">
+ 
+    <apex:form >
+    	<apex:pageBlock title="Contact's Birthdays" id="birthday_list">
+                   
+          Enter the Birthdate: <apex:inputText value="{!inputDate}"/>
+            <apex:commandButton value="Find" action="{!find}"/>
+            <apex:outputPanel id="page">
+            <apex:pageBlockTable value="{! Birthday}" var="Item">
+
+                <apex:column value="{!Item.LastName}"/>
+                <apex:column value="{!Item.BirthDate}"/>
+                <apex:column value="{!Item.Email}"/>
+				          
+            </apex:pageBlockTable>
+      
+           </apex:outputPanel>	 				
+        </apex:pageBlock>
+     </apex:form>
+</apex:page>

@@ -20,7 +20,7 @@ private class TestContactNumber {
         System.assertEquals(1, con.Number_of_Opportunities__c);
         
         Contact ser = new Contact(Firstname ='Steve', LastName='Darkwa');
-         
+         //new test
         Integer b = [Select count() From Opportunity Where 
                      Opportunity.AccountId = Null];
         ser.Number_of_Opportunities__c = b;

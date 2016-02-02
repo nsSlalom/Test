@@ -8,7 +8,8 @@ public class ContactBirthdayController{
             return con;
         }
         return null;      
-    }               
+    }   
+    //new stuff            
     public void find(){        
       getBirthday();
     }    
